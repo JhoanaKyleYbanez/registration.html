@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Registration</title>
+    <style>
+        p{color:black;
+			font-family:Georgia, 'Times New Roman', Times, serif;
+			font-size: 100% 
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/action_page.php">
+            <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" size="50"><br><br>
+            <label for="mname">Middle name:</label>
+                <input type="text" id="mname" name="mame" size="50"><br><br>
+            <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" size="50"><br><br>
+            <label for="haddress">Home Address:</label>
+                <input type="text" id="haddress" name="haddress" size="50"><br><br>
+    </form>
+        <p>Gender:</p>
+            <form action="/action_page.php">    
+                <input type="radio" id="gender1" name="gender" value="Male">
+            <label for="age1">Male</label>
+                <input type="radio" id="gender2" name="gender" value="Female">
+            <label for="gender2">Female</label><br>
+        </form>
+        <p>Email address link:</p>
+            <form action="https://mail.google.com/">
+                <input type="submit" value="Go to Email" />
+            </form>
+        <p><a href="mailto:jhoanaybanez13@gmail.com">Send email</a></p>
+        <p>Hobbies:</p>
+            <form action="/action_page.php">
+                <input type="checkbox" id="hobby1" name="hobby1" value="Computer Games">
+            <label for="hobby1"> Computer Games</label><br>
+                <input type="checkbox" id="hobby2" name="hobby2" value="Playing music instruments">
+            <label for="hobby2"> Playing music instruments </label><br>
+                <input type="checkbox" id="hobby3" name="hobby3" value="Cooking">
+            <label for="hobby3"> Cooking </label><br>
+                <input type="checkbox" id="hobby4" name="hobby4" value="Drawing">
+            <label for="hobby4"> Drawing </label><br><br>
+            </form>
+        <p>Favorate Color:</p>
+            <form action="/action_page.php">
+            <label for="color">Choose a Color:</label>
+            <select name="color" id="color">
+              <option value="Red">Red</option>
+              <option value="Green">Green</option>
+              <option value="Blue">Blue</option>
+              <option value="Black">Black</option>
+              <option value="Pink">Pink</option>
+              <option value="Yellow">Yellow</option>
+              <option value="White">White</option>
+              <option value="Orange">Orange</option>
+              <option value="Violet">Violet</option>
+              <option value="Maroon">Maroon</option>
+              <option value="Grey">Grey</option>
+              <option value="Magenta">Magenta</option>
+              <option value="Brown">Brown</option>
+              <option value="Cyan">Cyan</option>
+            </select>
+            <br><br>
+            </form>
+        <p>Say something about yourself:</p>
+        <form action="/action_page.php">
+            <textarea rows="6" cols="70" name="comment"></textarea>
+           <br><br>
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset" value="Reset">Reset</button>
+        </form>
+
+
+
+</body>
+</html>
